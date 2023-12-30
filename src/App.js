@@ -1,26 +1,20 @@
 import React, { useRef } from "react";
 import Resume from "./components/resume/resume";
-import html2canvas from "html2canvas";
-import { jsPDF } from "jspdf";
+import html2pdf from 'html2pdf.js';
 
 function App() {
   const pdfRef= useRef();
 
   const generatePdf = () => {
     const input = pdfRef.current;
-    html2canvas(input).then((canvas) => {
-    const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF('p', 'mm','a4', true);
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight = pdf.internal.pageSize.getHeight();
-    const imgWidth = canvas.width;
-    const imgHeight = canvas.height;
-    const ratio = Math.min(pdfWidth/imgWidth, pdfHeight/imgHeight);
-    const imgX = 0;
-    const imgY = 0;
-    pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth * ratio, imgHeight * ratio);
-    pdf.save('resume.pdf');
-    });
+    const options = {
+      margin: 4,
+      filename: 'resume.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    };
+    html2pdf(input, options);
   }
 
   
@@ -38,7 +32,7 @@ function App() {
           padding: 20,
         }}
       >
-        <div id="divToPrint"  ref={pdfRef} style={{ width: "80%" }}>
+        <div id="divToPrint"  ref={pdfRef} style={{ width: "90%" }}>
           <Resume />
         </div>
         <div
