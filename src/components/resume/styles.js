@@ -8,32 +8,33 @@ const styles = {
         padding: '20px',
         paddingTop: '50px',
         backgroundColor: '#FFF',
-        fontSize: '18px',
-        lineHeight: '24px',
+        fontSize: '12px',
+        lineHeight: '18px',
     },
     resumeHeader: {
         display: 'flex',
         flexDirection: 'row',
         width: '100%',
-        marginBottom: '30px'
+        marginBottom: '20px'
     },
     headerLogo: {
         display: 'flex',
         width: '25%',
         justifyContent: 'flex-end',
         alignItems: 'top',
-        paddingRight: '60px',
+        paddingRight: '30px',
         paddingTop: '10px'
     },
     logo: {
         display: 'flex',
         border: `1px solid ${primaryColor}`,
-        borderRadius: '45px',
-        width: '90px',
-        height: '90px',
+        borderRadius: '30px',
+        width: '60px',
+        height: '60px',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: '40px',
+        fontSize: '25px',
+        lineHeight: '28px',
         fontWeight: 500,
     },
     headerTitleContainer: {
@@ -41,17 +42,17 @@ const styles = {
         height: '100%',
     },
     title: {
-        fontSize: '50px',
-        lineHeight: '55px',
+        fontSize: '30px',
+        lineHeight: '35px',
         fontWeight: 500,
         color: primaryColor,
-        paddingBottom: '10px',
+        paddingBottom: '6px',
     },
     headerDetails: {
         display: 'flex',
         flexDirection: 'row',
         color: '#000',
-        paddingRight: '20px',
+        paddingRight: '10px',
     },
     headerRowContainer: {
         display: 'flex',
@@ -108,7 +109,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         width: '100%',
-        minHeight: 100
+        minHeight: 80
     },
     descriptionContainer: {
         display: 'flex',
@@ -121,6 +122,10 @@ const styles = {
     skillsWrapper: {
         display: 'flex',
         flexDirection: 'row',
+    },
+    skillsDetails: {
+        marginLeft: '-20px',
+        paddingRight: '10px'
     },
     workBody: {
         display: 'flex',
@@ -150,14 +155,12 @@ const styles = {
     },
 
     timelineCircle: {
-        display: 'flex',
         width: '14px',
         height: '16px',
         borderRadius: '8px',
         border: '1px solid #000',
     },
     timelineLine: {
-        display: 'flex',
         width: '1px',
         height: '100%',
         backgroundColor: '#000',
@@ -167,31 +170,31 @@ const styles = {
         paddingBottom: '4px'
     },
     imageSize: {
-        width: '20px',
-        height: '20px',
-        color: primaryColor,
-        marginRight: '5px',
-    },
-    linkedInIcon: {
         width: '16px',
         height: '16px',
         color: primaryColor,
-        marginRight: '5px',
-        paddingBottom: '4px',
+        marginRight: '3px',
+    },
+    linkedInIcon: {
+        width: '12px',
+        height: '12px',
+        color: primaryColor,
+        marginRight: '3px',
+        paddingBottom: '2px',
     },
     callIcon: {
-        width: '30px',
-        height: '30px',
+        width: '24px',
+        height: '24px',
         color: primaryColor,
-        marginRight: '-3px',
-        marginTop: '2px',
+        marginRight: '-5px',
+        marginTop: '4px',
     },
     mailIcon: {
-        width: '20px',
-        height: '20px',
+        width: '16px',
+        height: '16px',
         color: primaryColor,
         marginTop: '5px',
-        marginRight: '5px',
+        marginRight: '3px',
     },
     icon:{
         display: 'flex',
