@@ -8,7 +8,7 @@ function App() {
   const generatePdf = () => {
     const input = pdfRef.current;
     const options = {
-      margin: 4,
+      margin: 10,
       filename: 'resume.pdf',
       image: { type: 'jpeg', quality: 0.98 },
       html2canvas: { scale: 2 },
@@ -32,7 +32,7 @@ function App() {
           padding: 20,
         }}
       >
-        <div id="divToPrint"  ref={pdfRef} style={{ width: "90%" }}>
+        <div id="divToPrint"  ref={pdfRef} style={{ width: "100%" }}>
           <Resume />
         </div>
         <div
