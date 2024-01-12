@@ -122,7 +122,7 @@ function Resume() {
                 {resumeData.skills
                   .slice(
                     (Math.floor(resumeData.skills.length / 3) + 1) * 2 -
-                      resumeData.skills.length
+                    resumeData.skills.length
                   )
                   .map((item) => (
                     <li key={item}>{item}</li>
@@ -160,9 +160,16 @@ function Resume() {
                 <div style={styles.underline}>Internship: </div>
                 <div>
                   <ul>
-                    {resumeData.education.internships.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
+                    {resumeData.education.internships.map((item) => {
+                      if (item.link?.length > 0) {
+                        return <a style={styles.link} href={item.link} key={item.name}>
+                          <li>{item.name}</li>
+                        </a>
+                      } else {
+                        return <li key={item.name}>{item.name}</li>
+                      }
+                    }
+                    )}
                   </ul>
                 </div>
               </>
