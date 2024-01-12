@@ -5,8 +5,7 @@ const styles = {
         flexDirection: 'column',
         width: '100%',
         minHeight: '100vh',
-        padding: '20px',
-        paddingTop: '50px',
+        padding: '10px',
         backgroundColor: '#FFF',
         fontSize: '12px',
         lineHeight: '18px',
@@ -15,15 +14,15 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         width: '100%',
-        marginBottom: '20px'
+        marginBottom: '20px',
     },
     headerLogo: {
         display: 'flex',
-        width: '25%',
+        width: '20%',
         justifyContent: 'flex-end',
         alignItems: 'top',
         paddingRight: '30px',
-        paddingTop: '10px'
+        paddingTop: '10px',
     },
     logo: {
         display: 'flex',
@@ -38,7 +37,7 @@ const styles = {
         fontWeight: 500,
     },
     headerTitleContainer: {
-        width: '75%',
+        width: '80%',
         height: '100%',
     },
     title: {
@@ -70,12 +69,11 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         width: '100%',
-        backgroundColor: 'red'
     },
     subHeading: {
         display: 'flex',
         flexDirection: 'row',
-        width: '25%',
+        width: '20%',
         justifyContent: 'right',
         alignItems: 'right',
         fontWeight: 700,
@@ -114,7 +112,7 @@ const styles = {
     descriptionContainer: {
         display: 'flex',
         flexDirection: 'column',
-        width: '75%',
+        width: '80%',
         paddingBottom: '10px',
         paddingRight: '60px',
         paddingLeft: '10px'
